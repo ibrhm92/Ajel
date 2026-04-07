@@ -5,12 +5,13 @@ import { getStorage } from "firebase/storage";
 
 // ضع بيانات مشروعك من Firebase Console هنا
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyBQWUL12hqCr_Lg3LTRyLnc17N2e0nv4oo",
+  authDomain: "ajel-13731.firebaseapp.com",
+  projectId: "ajel-13731",
+  storageBucket: "ajel-13731.firebasestorage.app",
+  messagingSenderId: "34281946556",
+  appId: "1:34281946556:web:67372e80338668d687bfb9",
+  measurementId: "G-J4LV4EQ1HH",
 };
 
 const app = initializeApp(firebaseConfig);
