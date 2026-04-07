@@ -1,6 +1,6 @@
 // src/pages/client/HomePage.jsx
 import { useProducts } from "../../hooks/useProducts";
-import { useCartContext } from "../../context/CartContext.jsx";
+import { useCartContext } from "../../context/CartContext";
 import ProductCard from "../../components/ProductCard";
 
 export default function HomePage() {

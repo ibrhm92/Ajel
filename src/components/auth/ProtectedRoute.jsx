@@ -1,5 +1,5 @@
 // src/components/auth/ProtectedRoute.jsx
-import { useAuthContext } from "../../context/AuthContext.jsx";
+import { useAuthContext } from "../../context/AuthContext";
 import LoginPage from "../../pages/LoginPage";
 
 // حماية الصفحات - لو مش مسجل دخول يروح لصفحة اللوجن

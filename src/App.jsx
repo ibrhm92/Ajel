@@ -1,6 +1,6 @@
 // src/App.jsx
-import { AuthProvider } from "./context/AuthContext.jsx";
-import { CartProvider } from "./context/CartContext.jsx";
+import { AuthProvider } from "./context/AuthContext";
+import { CartProvider } from "./context/CartContext";
 import { ProtectedRoute } from "./components/auth/ProtectedRoute";
 import AdminLayout from "./components/layout/AdminLayout";
 import ClientLayout from "./components/layout/ClientLayout";

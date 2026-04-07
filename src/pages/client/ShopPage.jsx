@@ -1,7 +1,7 @@
 // src/pages/client/ShopPage.jsx
 import { useState } from "react";
 import { useProducts, useCategories } from "../../hooks/useProducts";
-import { useCartContext } from "../../context/CartContext.jsx";
+import { useCartContext } from "../../context/CartContext";
 import ProductCard from "../../components/ProductCard";
 
 const SORT_OPTIONS = [
