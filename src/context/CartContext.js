@@ -1,12 +1,12 @@
 // src/context/CartContext.js
-import { createContext, useContext } from "react";
+import { createContext, useContext, createElement } from "react";
 import { useCart } from "../hooks/useCart";
 
 const CartContext = createContext(null);
 
 export function CartProvider({ children }) {
   const cart = useCart();
-  return <CartContext.Provider value={cart}>{children}</CartContext.Provider>;
+  return createElement(CartContext.Provider, { value: cart }, children);
 }
 
 export function useCartContext() {
