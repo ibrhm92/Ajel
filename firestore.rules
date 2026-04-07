@@ -1,0 +1,43 @@
+// firestore.rules
+// ⚠️ ارفعها على Firebase Console > Firestore > Rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // المستخدمين - القراءة والكتابة من السيرفر فقط (عن طريق Admin SDK مستقبلاً)
+    // دلوقتي بنسمح بالقراءة للتحقق من اللوجن
+    match /users/{userId} {
+      allow read: if true; // هيتقيد بعدين
+      allow write: if false; // الكتابة من الكود بس
+    }
+
+    // المنتجات - القراءة للكل، الكتابة للمسجلين
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // حركات المخزن
+    match /stockMovements/{id} {
+      allow read, write: if true; // هيتأمن بالكود
+    }
+
+    // الطلبات
+    match /orders/{orderId} {
+      allow read, write: if true;
+    }
+
+    // الفئات
+    match /categories/{id} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // العروض
+    match /offers/{id} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
