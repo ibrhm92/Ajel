@@ -8,8 +8,8 @@ service cloud.firestore {
     // المستخدمين - القراءة والكتابة من السيرفر فقط (عن طريق Admin SDK مستقبلاً)
     // دلوقتي بنسمح بالقراءة للتحقق من اللوجن
     match /users/{userId} {
-      allow read: if true; // هيتقيد بعدين
-      allow write: if false; // الكتابة من الكود بس
+      allow read: if true; 
+      allow write: if true; 
     }
 
     // المنتجات - القراءة للكل، الكتابة للمسجلين
