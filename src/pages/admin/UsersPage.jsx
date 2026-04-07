@@ -7,7 +7,7 @@ import {
   toggleUserStatus,
   deleteUser,
 } from "../../hooks/useAuth";
-import { useAuthContext } from "../../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext.jsx";
 
 const ROLES = { admin: "أدمن", employee: "موظف" };
 

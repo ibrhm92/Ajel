@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
-import { useCartContext } from "../../context/CartContext";
+import { useCartContext } from "../../context/CartContext.jsx";
 import { calcInstallment } from "../../hooks/useCart";
 
 export default function ProductPage({ productId }) {

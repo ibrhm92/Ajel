@@ -1,6 +1,6 @@
 // src/pages/client/CartPage.jsx
 import { useState } from "react";
-import { useCartContext } from "../../context/CartContext";
+import { useCartContext } from "../../context/CartContext.jsx";
 import { calcInstallment } from "../../hooks/useCart";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../../config/firebase";

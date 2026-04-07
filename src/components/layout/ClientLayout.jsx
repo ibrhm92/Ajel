@@ -1,6 +1,6 @@
 // src/components/layout/ClientLayout.jsx
 import { useState } from "react";
-import { useCartContext } from "../../context/CartContext";
+import { useCartContext } from "../../context/CartContext.jsx";
 
 const NAV_LINKS = [
   { label: "الرئيسية", path: "/" },

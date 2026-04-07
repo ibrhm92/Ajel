@@ -5,4 +5,13 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: { port: 3000 },
+  esbuild: {
+    loader: "jsx",
+    include: /\.js$/,
+  },
+  optimizeDeps: {
+    esbuild: {
+      loader: { ".js": "jsx" },
+    },
+  },
 });

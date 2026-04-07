@@ -1,6 +1,6 @@
 // src/components/layout/AdminLayout.jsx
 import { useState } from "react";
-import { useAuthContext } from "../../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext.jsx";
 
 const NAV = [
   { icon: "📊", label: "الرئيسية", path: "/admin" },
